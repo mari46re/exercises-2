@@ -63,10 +63,43 @@ console.log(endOfBrian);
 const endOfAlbus = name.substring(2, 5);
 console.log(endOfAlbus);
 
-// console.log(`The total number of characters is ${total}`);
+console.log(`The total number of characters is ${total}`);
 
-// const indexTwo = name[2];
-// console.log(`The character at index two is ${indexTwo}`);
+const indexTwo = name[2];
+console.log(`The character at index two is ${indexTwo}`);
 
-// const indexSix = name[6];
-// console.log(`The character at index six is ${indexSix}`);
+const indexSix = name[6];
+console.log(`The character at index six is ${indexSix}`);
+
+// 3.	Find the end of the first name in a full name
+const myName = "Marikka Katrina Højen Jørgensen";
+const letter = myName[6];
+
+console.log(`The last letter of Marikka is ${letter}`);
+
+//17.	Convert only the first character in a string to CAPITAL, and the rest to non-capital?
+// You might need several different methods for this.
+
+const string = "heey, HVAD sååÅÅ så der";
+
+const firstLetter = string.substring(0, 1);
+const restOfSentence = string.substring(1);
+
+console.log(firstLetter.toUpperCase() + restOfSentence.toLowerCase());
+
+//18. Convert a german word like “Goethestraße” correctly to “GOETHESTRASSE”
+
+const germanWord = "Goethestraße";
+
+console.log(germanWord.replace("ß", "ss").toUpperCase());
+
+console.log(germanWord.toUpperCase());
+
+//8.	Create a string of a specific number of * (e.g. the same number as the number of characters in another string)
+
+const passw = "johnny123!";
+let passwStr = "";
+
+passwStr = passwStr.padEnd(passw.length, "*");
+
+console.log(passwStr);
