@@ -4,17 +4,13 @@ console.log("Hey, så skal der laves arrays!");
 
 let letters = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
-// let someLetter = letters[4];
-// let anotherLetter = letters[0];
+console.log(letters[4]);
 
-// console.log(`Some letter: ${someLetter}, another letter: ${anotherLetter}`);
+let newarr = letters;
 
-// let newarr = letters[4];
-
-// newarr[4] = "*";
-
-// console.log(letters);
-// console.log(letters[4]);
+//Denne erstatter index[4] med en stjerne.
+newarr[4] = "*";
+console.log(letters);
 
 //Array method: push, pop, slice, splice
 
