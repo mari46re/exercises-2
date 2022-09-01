@@ -14,6 +14,12 @@ console.log(letters);
 
 //Array method: push, pop, slice, splice
 
+//      PUSH tilføjer i slutningen af arrayet
+//      POP fjerner den sidste i arrayet
+//      SLICE viser en angivet bid af arrayet
+//      SPLICE tilføjer på et angivet index.
+//          Dét der skal tilføjes, angives til sidst i parantesen
+
 const people = ["Harry", "Ron", "Hermione"];
 let result;
 
@@ -33,10 +39,10 @@ result = people.push("Luna");
 //People: Viser alle 5 i array
 result = people.slice(0, 3);
 //Result: Viser tomme []
-//People: Cho indskrives i array på index[1]
+//People: Cho TILFØJES i array på index[1]
 result = people.splice(1, 0, "Cho");
 //Result: Viser tomme []
-//People: Ginny erstatter Ron som index[1] i array.
+//People: Ginny erstatter Cho som index[1] i array.
 people[1] = "Ginny";
 //Result: 8 people i array
 //Poeple: Både Fred og George tilføjes sidst i Arrayet
@@ -50,3 +56,10 @@ result = people.splice(result, 1);
 
 console.log(result);
 console.log(people);
+
+const letter = Array.from("Marikka");
+console.log(letter);
+
+const str = "Marikka";
+const arr = str.split();
+console.log(arr);
