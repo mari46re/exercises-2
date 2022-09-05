@@ -28,22 +28,22 @@ for (counter = 10; counter > 0; counter--) {
 console.log("liftoff");
 
 //Tælle fra 1 - 19, men kun ulige numre
-for (counter = 1; counter < 20; counter++) {
+for (counter = 1; counter <= 19; counter++) {
   console.log(counter++);
 }
 
 //Tælle fra 1 - 1677216, men doble hver gang
-for (counter = 1; counter < 1677216; counter *= 2) {
+for (counter = 1; counter <= 1677216; counter *= 2) {
   console.log(counter);
 }
 
 //Tælle fra 111 til 138 med plus tre
-for (counter = 111; counter < 138; counter += 3) {
+for (counter = 111; counter <= 138; counter += 3) {
   console.log(counter);
 }
 
 //Tælle fra 100 til 0 af 10 skridt
-for (counter = 100; counter > 0; counter -= 10) {
+for (counter = 100; counter >= 0; counter -= 10) {
   console.log(counter);
 }
 
