@@ -11,13 +11,27 @@ const name = "Peter Heronimous Lind";
 // const lastName = name.substring(17);
 // console.log(lastName);
 
-const names = name.split(" ");
+getNameParts();
 
-const firstName = names[0];
-console.log(firstName);
+function getNameParts(fullname) {
+  fullname = {
+    firstName: name.substring(0, 5),
+    middleName: name.substring(6, 17),
+    lastName: name.substring(17),
+  };
 
-const middleName = names[1];
-console.log(middleName);
+  //   middleName = null;
+  console.log(fullname);
+  //   console.log({ firstName, middleName, lastName });
+}
 
-const lastName = names[2];
-console.log(lastName);
+// const names = name.split(" ");
+
+// const firstName = names[0];
+// console.log(firstName);
+
+// const middleName = names[1];
+// console.log(middleName);
+
+// const lastName = names[2];
+// console.log(lastName);
