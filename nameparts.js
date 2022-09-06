@@ -1,6 +1,6 @@
 "use strict";
 
-const name = "Peter Heronimous Lind";
+// const name = "Peter Heronimous Lind";
 
 // const firstName = name.substring(0, 5);
 // console.log(firstName);
@@ -11,19 +11,17 @@ const name = "Peter Heronimous Lind";
 // const lastName = name.substring(17);
 // console.log(lastName);
 
-getNameParts();
+// getNameParts();
 
-function getNameParts(fullname) {
-  fullname = {
-    firstName: name.substring(0, 5),
-    middleName: name.substring(6, 17),
-    lastName: name.substring(17),
-  };
+// function getNameParts(fullname) {
+//   fullname = {
+//     firstName: name.substring(0, 5),
+//     middleName: name.substring(6, 17),
+//     lastName: name.substring(17),
+//   };
 
-  //   middleName = null;
-  console.log(fullname);
-  //   console.log({ firstName, middleName, lastName });
-}
+//   console.log(fullname);
+// }
 
 // const names = name.split(" ");
 
@@ -35,3 +33,8 @@ function getNameParts(fullname) {
 
 // const lastName = names[2];
 // console.log(lastName);
+
+fullname("Potter", "Harry", "James");
+console.log(lastName, firstName, middleName);
+
+function fullname(lastName, firstName, middleName) {}
