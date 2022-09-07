@@ -1,20 +1,6 @@
 "use strict";
 
-hexToRGB("#c0ffee");
 cssToRGB();
-
-function hexToRGB(hex) {
-  let r;
-  let g;
-  let b;
-
-  r = hex.substring(1, 3);
-  g = hex.substring(3, 5);
-  b = hex.substring(5, 7);
-
-  console.log(r, g, b);
-}
-
 function cssToRGB(rgbStr) {
   // let rgbStr;
 
@@ -41,3 +27,19 @@ function convertRGBToHex(r, g, b) {
 const rgb = convertRGBToHex(475, 2, 222);
 
 console.log("HEX: ", rgb);
+
+const hex = hexToRGB("#c0ffee");
+
+function hexToRGB(hex) {
+  let r;
+  let g;
+  let b;
+
+  r = parseInt(hex.substring(1, 3), 16);
+  g = parseInt(hex.substring(3, 5), 16);
+  b = parseInt(hex.substring(5, 7), 16);
+
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+console.log("RGB: ", hex);
